@@ -33,4 +33,4 @@ if st.button("submit") :
     
 for history in st.session_state["chat_history"]:
     st.write("You: ", history["question"])
-    st.write("Agent: ", history["answer"])
+    st.markdown(f"Agent: {history['answer']}")
